@@ -1,0 +1,27 @@
+{
+  "providers": {
+    "openai": {
+      "type": "openai",
+      "envFile": "~/.config/imagegen-mcp/openai.env",
+      "envVar": "OPENAI_API_KEY"
+    },
+    "local": {
+      "type": "openai",
+      "envFile": "~/.config/imagegen-mcp/local.env",
+      "envVar": "LOCAL_API_KEY",
+      "baseUrl": "http://localhost:8000/v1"
+    },
+    "stability": {
+      "type": "stability",
+      "envFile": "~/.config/imagegen-mcp/stability.env",
+      "envVar": "STABILITY_API_KEY"
+    },
+    "replicate": {
+      "type": "replicate",
+      "envFile": "~/.config/imagegen-mcp/replicate.env",
+      "envVar": "REPLICATE_API_TOKEN"
+    }
+  },
+  "defaultProvider": "openai",
+  "defaultModel": "gpt-image-1.5"
+}
